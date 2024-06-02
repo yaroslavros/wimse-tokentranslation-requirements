@@ -8,17 +8,17 @@ number:
 date:
 consensus: true
 v: 3
-area: art
-workgroup: Workload Identity in Multi System Environments
+area: "Applications and Real-Time"
+workgroup: "Workload Identity in Multi System Environments"
 keyword:
  - Token Translation
  - Requirements
 venue:
-  group: Workload Identity in Multi System Environments
-  type: Working Group
-  mail: wimse@example.com
-  arch: https://mailarchive.ietf.org/arch/browse/wimse/
-  github: yaroslavros/wimse-tokentranslation-requirements
+  group: "Workload Identity in Multi System Environments"
+  type: "Working Group"
+  mail: "wimse@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/wimse/"
+  github: "yaroslavros/wimse-tokentranslation-requirements"
 
 author:
  -
