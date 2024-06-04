@@ -25,8 +25,8 @@ author:
     ins: "Y. Rosomakho"
     fullname: Yaroslav Rosomakho
     organization: Zscaler
-    email: yrosomakho@zscaler.com
-    
+    email: yrosomakho@zscaler.co,
+ -   
     ins: "D. Saxe"
     fullname: Dean H. Saxe
     organization: Amazon Web Services
