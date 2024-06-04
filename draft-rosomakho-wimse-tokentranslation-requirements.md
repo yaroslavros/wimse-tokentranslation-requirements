@@ -21,13 +21,11 @@ venue:
   github: "yaroslavros/wimse-tokentranslation-requirements"
 
 author:
- -
-    ins: "Y. Rosomakho"
+ -  ins: "Y. Rosomakho"
     fullname: Yaroslav Rosomakho
     organization: Zscaler
     email: yrosomakho@zscaler.com,
- -   
-    ins: "D. Saxe"
+ -  ins: "D. Saxe"
     fullname: Dean H. Saxe
     organization: Amazon Web Services
     email: deansaxe@amazon.com
