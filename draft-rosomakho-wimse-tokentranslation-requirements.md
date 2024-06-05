@@ -29,6 +29,10 @@ author:
     fullname: Dean H. Saxe
     organization: Amazon Web Services
     email: deansaxe@amazon.com
+ -  ins: "D. Izumskiy"
+    fullname: Dmitry Izumskiy
+    organization: Intuit
+    email: idimaster@gmail.com
 
 normative:
 
