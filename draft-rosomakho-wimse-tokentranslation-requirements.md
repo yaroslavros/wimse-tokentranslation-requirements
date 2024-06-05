@@ -86,6 +86,7 @@ The translation service must enable the addition of sender constraints to restri
 # Token Translation Mechanisms
 
 Token translation can be performed by either the workload itself or an identity proxy. Multiple aspects of translation processes can occur simultaneously or be chained together to meet the needs of complex scenarios.
+Translation also can be subject of authorization restrictions in context of impersonation or dligation use cases.
 
 # Security Considerations
 
