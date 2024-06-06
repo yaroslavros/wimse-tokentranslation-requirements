@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-04T00:55:40.070863+00:00",
+  "timestamp": "2024-06-06T00:55:07.030165+00:00",
   "repo": "yaroslavros/wimse-tokentranslation-requirements",
   "labels": [
     {
@@ -50,5 +50,66 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOMD7Exs5xdBTb",
+      "title": "Add authors",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/pull/1",
+      "state": "OPEN",
+      "author": "dhs-aws",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Added myself as an author.  Please use this branch to add additional authors.",
+      "createdAt": "2024-06-04T17:19:44Z",
+      "updatedAt": "2024-06-05T06:53:57Z",
+      "baseRepository": "yaroslavros/wimse-tokentranslation-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "c1082a46a63080767ad192136023c9ded197f61a",
+      "headRepository": "yaroslavros/wimse-tokentranslation-requirements",
+      "headRefName": "author-patch",
+      "headRefOid": "76b4955dfc39fd30896ba928874d10fe01ea98c2",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "dhs-aws",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I broke the build... again.  There's trailing whitespace that I need to find and eliminate.",
+          "createdAt": "2024-06-04T17:23:19Z",
+          "updatedAt": "2024-06-04T17:23:19Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOMD7Exs5xgLhR",
+      "title": "Authorization rules during token translation ",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/pull/2",
+      "state": "OPEN",
+      "author": "idimaster",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Add authorization as part of translation mechanism.",
+      "createdAt": "2024-06-05T05:32:45Z",
+      "updatedAt": "2024-06-05T05:32:45Z",
+      "baseRepository": "yaroslavros/wimse-tokentranslation-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "c1082a46a63080767ad192136023c9ded197f61a",
+      "headRepository": "yaroslavros/wimse-tokentranslation-requirements",
+      "headRefName": "authz",
+      "headRefOid": "5cbb7250af76197615bd35431fc77406f05a3cf7",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
