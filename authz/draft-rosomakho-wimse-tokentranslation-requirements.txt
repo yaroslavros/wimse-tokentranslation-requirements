@@ -4,8 +4,8 @@
 
 Workload Identity in Multi System Environments              Y. Rosomakho
 Internet-Draft                                                   Zscaler
-Intended status: Informational                               5 June 2024
-Expires: 7 December 2024
+Intended status: Informational                              11 June 2024
+Expires: 13 December 2024
 
 
                 Requirements for WIMSE Token Translation
@@ -57,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 December 2024.
+   This Internet-Draft will expire on 13 December 2024.
 
 Copyright Notice
 
@@ -178,11 +178,11 @@ Table of Contents
 
 4.  Token Translation Mechanisms
 
-   Token translation can be performed by either the workload itself or
+   Token translation can be initiated by either the workload itself or
    an identity proxy.  Multiple aspects of translation processes can
    occur simultaneously or be chained together to meet the needs of
-   complex scenarios.  Translation also can be subject of authorization
-   restrictions in context of impersonation or dligation use cases.
+   complex scenarios.  Translation can also be a subject of
+   authorization restrictions in context of impersonation or delegation.
 
 5.  Security Considerations
 
