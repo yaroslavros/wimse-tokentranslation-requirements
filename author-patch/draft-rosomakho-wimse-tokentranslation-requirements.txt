@@ -5,10 +5,10 @@
 Workload Identity in Multi System Environments              Y. Rosomakho
 Internet-Draft                                                   Zscaler
 Intended status: Informational                                   D. Saxe
-Expires: 7 December 2024                             Amazon Web Services
+Expires: 13 December 2024                            Amazon Web Services
                                                              D. Izumskiy
                                                                   Intuit
-                                                             5 June 2024
+                                                            11 June 2024
 
 
                 Requirements for WIMSE Token Translation
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 December 2024.
+   This Internet-Draft will expire on 13 December 2024.
 
 Copyright Notice
 
@@ -251,7 +251,7 @@ Authors' Addresses
 
    Yaroslav Rosomakho
    Zscaler
-   Email: yrosomakho@zscaler.com,
+   Email: yrosomakho@zscaler.com
 
 
    Dean H. Saxe
