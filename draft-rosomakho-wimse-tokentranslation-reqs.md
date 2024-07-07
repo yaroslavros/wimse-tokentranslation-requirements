@@ -2,7 +2,7 @@
 title: "Requirements for WIMSE Token Translation"
 category: info
 
-docname: draft-rosomakho-wimse-tokentranslation-requirements-latest
+docname: draft-rosomakho-wimse-tokentranslation-reqs-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -18,7 +18,7 @@ venue:
   type: "Working Group"
   mail: "wimse@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/wimse/"
-  github: "yaroslavros/wimse-tokentranslation-requirements"
+  github: "yaroslavros/wimse-tokentranslation-reqs"
 
 author:
  -  ins: "Y. Rosomakho"
