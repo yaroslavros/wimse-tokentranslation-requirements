@@ -1,0 +1,265 @@
+
+
+
+
+Workload Identity in Multi System Environments              Y. Rosomakho
+Internet-Draft                                                   Zscaler
+Intended status: Informational                                   D. Saxe
+Expires: 8 January 2025                              Amazon Web Services
+                                                             D. Izumskiy
+                                                                  Intuit
+                                                             7 July 2024
+
+
+                Requirements for WIMSE Token Translation
+           draft-rosomakho-wimse-tokentranslation-reqs-latest
+
+Abstract
+
+   This document outlines the requirements for workload token
+   translation within the context of the Workload Identity in Multi
+   System Environments (WIMSE).  Token translation may be required for
+   interoperability between workloads or for complying with security
+   requirements of multi-system environments.  This requirement document
+   considers various aspects of token translation, such as changes in
+   token format, content encoding, cryptographic properties, and context
+   embedding.  Additionally, this document raises security
+   considerations to be addressed by specific token translation
+   implementations, including replay attacks, access control, and
+   privacy concerns.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-rosomakho-wimse-
+   tokentranslation-reqs/.
+
+   Discussion of this document takes place on the Workload Identity in
+   Multi System Environments Working Group mailing list
+   (mailto:wimse@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/wimse/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/wimse/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/yaroslavros/wimse-tokentranslation-reqs.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 8 January 2025.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions and Definitions
+   3.  Token Translation Requirements
+     3.1.  Token Format Change
+     3.2.  Token Encoding Change
+     3.3.  Changes to Cryptographic Properties of the Token
+     3.4.  Embedding One Token in Another
+     3.5.  Change of Embedded Context in Token
+     3.6.  Change of Validity Constraint of the Token
+     3.7.  Changing or Adding Subjects of the Token
+     3.8.  Adding Sender Constraint to the Token
+   4.  Token Translation Mechanisms
+   5.  Security Considerations
+     5.1.  Replay attacks
+     5.2.  Access control
+     5.3.  Privilege Escalation
+     5.4.  Prevention of Abuse of Token Translation Service
+     5.5.  Auditability
+     5.6.  Privacy Considerations
+   6.  IANA Considerations
+   7.  Normative References
+   Acknowledgments
+   Authors' Addresses
+
+1.  Introduction
+
+   Inter-workload communications rely on tokens for identification,
+   authentication and authorization.  These tokens are available in
+   various formats including Oauth 2.0 bearer tokens, X.509
+   certificates, SPIFFE JWT-SVID and many others.  Some of these token
+   formats have encoding variants, offer flexible cryptographic options
+   to address confidentiality and integrity requirements and may embed
+   additional contextual information in various formats.  This document
+   outlines the requirements for token translations that can apply
+   within a given token format or across token formats and defines
+   security considerations to be addressed by specific implementations
+   of token translation.
+
+2.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+3.  Token Translation Requirements
+
+   Token translation involves transforming a token from one format or
+   set of characteristics to another.  The following requirements must
+   be considered for effective token translation:
+
+3.1.  Token Format Change
+
+   The translation service must support converting tokens from one
+   format to another (e.g., from Oauth 2.0 Bearer Token to X.509 client
+   certificate).
+
+3.2.  Token Encoding Change
+
+   Some token formats support multiple encodings of subject and context.
+   Token translation process must support changes to these encodings
+   were relevant.
+
+3.3.  Changes to Cryptographic Properties of the Token
+
+   Some token format support various cryptographic algorithms for
+   digital signatures, hashing and encryption.  Specific cryptographic
+   requirements can be defined by capabilities of communicating
+   workloads and identity proxies, inherent security of communication
+   channels and relevant regulatory compliance.  Token translation
+   process must facilitate changes in the relevant cryptographic
+   algorithms.
+
+3.4.  Embedding One Token in Another
+
+   Certain token formats have flexibility to embed another token in the
+   same or different format.  The translation service must enable such
+   embedding to facilitate nested authentication or delegation.
+
+3.5.  Change of Embedded Context in Token
+
+   The translation service must support modifications to the embedded
+   context within a token including attestation and assertions.
+
+3.6.  Change of Validity Constraint of the Token
+
+   The translation service must allow changes to the validity
+   constraints of a token, such as the expiration time, scope or
+   audience.
+
+3.7.  Changing or Adding Subjects of the Token
+
+   The translation service must support altering or adding subjects
+   within the token to reflect different entities or roles.
+
+3.8.  Adding Sender Constraint to the Token
+
+   The translation service must enable the addition of sender
+   constraints to restrict who can use or forward the token.
+
+4.  Token Translation Mechanisms
+
+   Token translation can be initiated by either the workload itself or
+   an identity proxy.  Multiple aspects of translation processes can
+   occur simultaneously or be chained together to meet the needs of
+   complex scenarios.  Translation can also be a subject of
+   authorization restrictions in context of impersonation or delegation.
+
+5.  Security Considerations
+
+   The following considerations must be addressed by the token
+   translation process.
+
+5.1.  Replay attacks
+
+   Token translation process must address concern of replay attacks to
+   ensure that unauthorised parties cannot steal and reuse workload
+   tokens.
+
+5.2.  Access control
+
+   Token translation process must have relevant authentication and
+   authorization mechanisms to ensure required level of access control.
+
+5.3.  Privilege Escalation
+
+   Token translation process must provide required validation and comply
+   to least privilege principles to prevent unauthorized privilege
+   escalation through token translation.
+
+5.4.  Prevention of Abuse of Token Translation Service
+
+   Token translation process must consider protection of token
+   translation service against denial of service and other abusing
+   attacks.
+
+5.5.  Auditability
+
+   Token translation process must support detailed logging options of
+   all token translation activities to support auditing and forensic
+   analysis.
+
+5.6.  Privacy Considerations
+
+   Token translation process performed for cross-domain use cases needs
+   to consider generalization of identity to limit exposure of internal
+   topology of a given domain.  In addition to that, token translation
+   process must consider confidentiality of sensitive information such
+   as identity subject and context included in the token.
+
+6.  IANA Considerations
+
+   This document has no IANA actions.
+
+7.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+Acknowledgments
+
+   TODO acknowledge.
+
+Authors' Addresses
+
+   Yaroslav Rosomakho
+   Zscaler
+   Email: yrosomakho@zscaler.com
+
+
+   Dean H. Saxe
+   Amazon Web Services
+   Email: deansaxe@amazon.com
+
+
+   Dmitry Izumskiy
+   Intuit
+   Email: idimaster@gmail.com
