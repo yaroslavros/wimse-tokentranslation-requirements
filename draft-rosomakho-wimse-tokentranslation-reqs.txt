@@ -5,14 +5,14 @@
 Workload Identity in Multi System Environments              Y. Rosomakho
 Internet-Draft                                                   Zscaler
 Intended status: Informational                                   D. Saxe
-Expires: 13 December 2024                            Amazon Web Services
+Expires: 8 January 2025                              Amazon Web Services
                                                              D. Izumskiy
                                                                   Intuit
-                                                            11 June 2024
+                                                             7 July 2024
 
 
                 Requirements for WIMSE Token Translation
-       draft-rosomakho-wimse-tokentranslation-requirements-latest
+           draft-rosomakho-wimse-tokentranslation-reqs-latest
 
 Abstract
 
@@ -34,7 +34,7 @@ About This Document
 
    Status information for this document may be found at
    https://datatracker.ietf.org/doc/draft-rosomakho-wimse-
-   tokentranslation-requirements/.
+   tokentranslation-reqs/.
 
    Discussion of this document takes place on the Workload Identity in
    Multi System Environments Working Group mailing list
@@ -43,7 +43,7 @@ About This Document
    https://www.ietf.org/mailman/listinfo/wimse/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/yaroslavros/wimse-tokentranslation-requirements.
+   https://github.com/yaroslavros/wimse-tokentranslation-reqs.
 
 Status of This Memo
 
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 December 2024.
+   This Internet-Draft will expire on 8 January 2025.
 
 Copyright Notice
 
