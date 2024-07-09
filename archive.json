@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-07T01:01:38.107064+00:00",
+  "timestamp": "2024-07-09T00:57:36.006871+00:00",
   "repo": "yaroslavros/wimse-tokentranslation-requirements",
   "labels": [
     {
@@ -49,7 +49,40 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 3,
+      "id": "I_kwDOMD7Exs6OxUnf",
+      "title": "Document metadata",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/3",
+      "state": "OPEN",
+      "author": "yaronf",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "> Source for this draft and an issue tracker can be found at https://github.com/yaroslavros/wimse-tokentranslation-reqs.\r\n\r\nPlease correct the GH link.",
+      "createdAt": "2024-07-08T10:48:34Z",
+      "updatedAt": "2024-07-08T10:48:34Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOMD7Exs6OxccF",
+      "title": "Policy enforcement",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/4",
+      "state": "OPEN",
+      "author": "yaronf",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "In addition to what the token translation service can *do*, I think the document should also specify at the same \"altitude\" what kind of policy we would like the service to enforce. ",
+      "createdAt": "2024-07-08T11:04:35Z",
+      "updatedAt": "2024-07-08T11:04:35Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -112,6 +145,32 @@
       "mergeCommit": {
         "oid": "e771d23e7a41628170bb15e35f5594943a0d3dfe"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOMD7Exs50uO23",
+      "title": "Updated name, email address",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/pull/5",
+      "state": "OPEN",
+      "author": "deansaxe",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Changed from Amazon to a personal address.",
+      "createdAt": "2024-07-08T17:07:50Z",
+      "updatedAt": "2024-07-08T17:07:50Z",
+      "baseRepository": "yaroslavros/wimse-tokentranslation-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "13afe4d15c71245e51ced4db5ab54e8ca2e5cee0",
+      "headRepository": "deansaxe/wimse-tokentranslation-requirements",
+      "headRefName": "patch-1",
+      "headRefOid": "11bdcad72f0505442fc3bbd2a6be11fd094ef879",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
