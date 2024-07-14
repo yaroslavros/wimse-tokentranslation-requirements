@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-11T00:58:10.085837+00:00",
+  "timestamp": "2024-07-14T01:02:26.583655+00:00",
   "repo": "yaroslavros/wimse-tokentranslation-requirements",
   "labels": [
     {
@@ -79,6 +79,38 @@
       "body": "In addition to what the token translation service can *do*, I think the document should also specify at the same \"altitude\" what kind of policy we would like the service to enforce. ",
       "createdAt": "2024-07-08T11:04:35Z",
       "updatedAt": "2024-07-08T11:04:35Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOMD7Exs6POiFv",
+      "title": "Retaining Sender Constrained Properties",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/6",
+      "state": "OPEN",
+      "author": "PieterKas",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Opened as identity enthusiast, not as WIMSE co-chair.\r\n\r\nHave you given any thought on whether properties like previous sender constraint should be preserved? For example, Should workload 10 in a chain of microservices know that the original access token was sender constrained using DPoP?",
+      "createdAt": "2024-07-11T11:32:19Z",
+      "updatedAt": "2024-07-11T11:33:29Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOMD7Exs6POnX4",
+      "title": "Embedding of tokens",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/7",
+      "state": "OPEN",
+      "author": "PieterKas",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Opened as identity enthusiast, not as WIMSE co-chair.\r\n\r\nEmbedding of tokens always feels like a risky practice - e.g. embedded tokens may be \"lifted\" from the new token and replayed (think of embedding an access token in another token for example). Perhaps add something in the requirements to indicate some kind of requirement to embed tokens without enabling token replay theft?",
+      "createdAt": "2024-07-11T11:44:20Z",
+      "updatedAt": "2024-07-11T11:44:20Z",
       "closedAt": null,
       "comments": []
     }
