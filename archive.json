@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-28T01:02:38.370827+00:00",
+  "timestamp": "2024-07-30T00:58:20.392150+00:00",
   "repo": "yaroslavros/wimse-tokentranslation-requirements",
   "labels": [
     {
@@ -111,6 +111,54 @@
       "body": "Opened as identity enthusiast, not as WIMSE co-chair.\r\n\r\nEmbedding of tokens always feels like a risky practice - e.g. embedded tokens may be \"lifted\" from the new token and replayed (think of embedding an access token in another token for example). Perhaps add something in the requirements to indicate some kind of requirement to embed tokens without enabling token replay theft?",
       "createdAt": "2024-07-11T11:44:20Z",
       "updatedAt": "2024-07-11T11:44:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOMD7Exs6RKzPD",
+      "title": "Links are all dead in the current version",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/8",
+      "state": "OPEN",
+      "author": "jeffsec-aws",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "when I try to follow:\r\n- Editor's Copy\r\n- Datatracker Page\r\n- Individual Draft\r\n- Compare Editor's Copy to Individual Draft\r\n",
+      "createdAt": "2024-07-29T14:04:52Z",
+      "updatedAt": "2024-07-29T14:05:55Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "I_kwDOMD7Exs6RMShh",
+      "title": "Need specification of OAuth2 Opaque Token <--> OAuth2 JWT token translations",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/9",
+      "state": "OPEN",
+      "author": "jeffsec-aws",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Tokens can flow through different channels that are more or less privacy preserving.\r\n\r\nAs expressed at IETF 120, we should rename Token Format Change or disambiguate it at least to include:\r\n1.  Standard Format trans;lation (X.509 to OAuth2)\r\n2. and OAuth2 Token Format translation (Opaque to JWT)",
+      "createdAt": "2024-07-29T17:03:19Z",
+      "updatedAt": "2024-07-29T17:03:19Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 10,
+      "id": "I_kwDOMD7Exs6RMTwO",
+      "title": "Spec needs guidance for 3rd party translation",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/10",
+      "state": "OPEN",
+      "author": "jeffsec-aws",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "3rd party providers having proprietary format for tokens should be able to provide their own implementation guidance while not infringing guardrail rules of Translation to ensure easy compliance with WIMSE.\r\n\r\nSuch guidance would allow quicker proposal for translation of Shibboleth, Siteminder cookie, CAS as both source and destination.",
+      "createdAt": "2024-07-29T17:06:23Z",
+      "updatedAt": "2024-07-29T17:06:23Z",
       "closedAt": null,
       "comments": []
     }
