@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-26T01:05:00.444858+00:00",
+  "timestamp": "2024-09-29T01:11:01.944554+00:00",
   "repo": "yaroslavros/wimse-tokentranslation-requirements",
   "labels": [
     {
@@ -161,6 +161,61 @@
       "updatedAt": "2024-07-29T17:06:23Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 11,
+      "id": "I_kwDOMD7Exs6YMiRN",
+      "title": "What is the appropriate document track for this Use Cases document?",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/11",
+      "state": "OPEN",
+      "author": "deansaxe",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "As of IETF120 we decided that an RFC-track document is not likely to be the right path forward.  Yet, we wish to eventually publish these use cases for long term visibility.  What is the proper document type and publishing mechanism within IETF for this document?\r\n\r\n",
+      "createdAt": "2024-09-27T17:36:01Z",
+      "updatedAt": "2024-09-28T15:46:40Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "jricher",
+          "authorAssociation": "NONE",
+          "body": "If RFC is not the target, then it can become a working group draft by being tagged as \"WG Adopted, Information Only\" in the Datatracker. This does not lead to a \"publication\" of the document, though. Anything other than RFC would be a process outside of the IETF's publication stream.",
+          "createdAt": "2024-09-27T19:22:07Z",
+          "updatedAt": "2024-09-27T19:22:07Z"
+        },
+        {
+          "author": "deansaxe",
+          "authorAssociation": "NONE",
+          "body": "Pieter had mentioned there may be another publication path to track down.",
+          "createdAt": "2024-09-28T15:46:39Z",
+          "updatedAt": "2024-09-28T15:46:39Z"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "id": "I_kwDOMD7Exs6YMjLO",
+      "title": "Should we merge the use cases document and protocol document into a single RFC track document?",
+      "url": "https://github.com/yaroslavros/wimse-tokentranslation-requirements/issues/12",
+      "state": "OPEN",
+      "author": "deansaxe",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "We currently have two documents progressing separately.  \r\n\r\nhttps://github.com/yaroslavros/wimse-tokentranslation-requirements\r\nhttps://github.com/deansaxe/wimse-token-exchange-and-translation\r\n\r\nAs the work progresses, should we merge these into a single RFC track document?  This is related to #11 but must be answered separately.",
+      "createdAt": "2024-09-27T17:38:42Z",
+      "updatedAt": "2024-09-27T17:39:35Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "deansaxe",
+          "authorAssociation": "NONE",
+          "body": "My sense is that the documents should remain on separate tracks and be developed in close coordination. However, I would not be opposed to merging the documents if there is consensus to do so.",
+          "createdAt": "2024-09-27T17:39:34Z",
+          "updatedAt": "2024-09-27T17:39:34Z"
+        }
+      ]
     }
   ],
   "pulls": [
